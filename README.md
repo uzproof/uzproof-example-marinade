@@ -51,13 +51,9 @@ Output:
    verified at: 2026-04-10T14:23:00.000Z
 ```
 
-> **During UZPROOF's pre-launch window:** `@uzproof/verify-reader` is
-> being reviewed before its first npm publish. If `npm install` fails
-> to resolve it, link the local package:
-> `npm link @uzproof/verify-reader` after cloning the
-> [uzproof/uzproof](https://github.com/uzproof/uzproof) monorepo and
-> running `cd packages/verify-reader && npm link`. Once v0.1.0 ships
-> to the npm registry this dance won't be needed.
+> **SDK availability:** `@uzproof/verify-reader@0.1.0` is live on
+> npm as of 2026-04-23 — plain `npm install @uzproof/verify-reader`
+> resolves correctly. No extra setup needed.
 
 ## What's in the box
 

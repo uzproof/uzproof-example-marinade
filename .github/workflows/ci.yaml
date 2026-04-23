@@ -16,5 +16,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx tsc --noEmit
-      - name: Smoke — check script compiles and runs help
-        run: npx tsx --eval "console.log('tsx + @uzproof/verify-reader imports OK')"
+      - name: Smoke — actually import @uzproof/verify-reader
+        run: |
+          npx tsx --eval "import('@uzproof/verify-reader').then((m) => { const need = ['hasQuestCompletion', 'getQuestCompletion', 'verifyBatch', 'SAS_PROGRAM_ID']; const missing = need.filter((k) => !(k in m)); if (missing.length) { console.error('Missing exports:', missing); process.exit(1); } console.log('verify-reader exports OK:', need.join(', ')); })"

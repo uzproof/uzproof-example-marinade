@@ -20,12 +20,15 @@
   "license": "MIT",
   "dependencies": {
     "@solana/web3.js": "^1.98.0",
-    "@uzproof/verify-reader": "^0.1.0"
+    "@uzproof/verify-reader": "^0.1.4"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0"
+  },
+  "overrides": {
+    "uuid": "^14.0.0"
   },
   "engines": {
     "node": ">=18.0.0"

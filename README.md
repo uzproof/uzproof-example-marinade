@@ -51,9 +51,11 @@ Output:
    verified at: 2026-04-10T14:23:00.000Z
 ```
 
-> **SDK availability:** `@uzproof/verify-reader@0.1.0` is live on
-> npm as of 2026-04-23 — plain `npm install @uzproof/verify-reader`
-> resolves correctly. No extra setup needed.
+> **SDK availability:** `@uzproof/verify-reader` is live on npm —
+> `npm install @uzproof/verify-reader @solana/web3.js` resolves
+> against the latest published version. This example's
+> `package.json` pins `^0.1.4` which is the current `latest` tag;
+> all earlier 0.1.x versions are deprecated with upgrade pointers.
 
 ## What's in the box
 

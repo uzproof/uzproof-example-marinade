@@ -1,0 +1,33 @@
+{
+  "name": "uzproof-example-marinade",
+  "version": "0.1.0",
+  "description": "Minimal reference integration: check whether a wallet has a UZPROOF attestation for 'stake_sol' on Solana mainnet. Pattern applies to any dApp that wants to gate a loyalty tier, airdrop, or badge on genuine on-chain activity.",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "check": "tsx src/check-staker.ts",
+    "tier": "tsx src/loyalty-tier.ts"
+  },
+  "keywords": [
+    "uzproof",
+    "marinade",
+    "solana",
+    "sas",
+    "attestation",
+    "example"
+  ],
+  "author": "UZPROOF <hello@uzproof.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "@uzproof/verify-reader": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

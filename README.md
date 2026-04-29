@@ -106,7 +106,7 @@ for a loyalty tier.
   using the user's own payment (Paid Claim flow, user-signed).
 - **Cryptographic proof** — every attestation is a signed account on
   SAS mainnet. Your users can verify it independently at any time.
-- **Anti-sybil built-in** — UZPROOF runs 8 anti-sybil signals before
+- **Anti-sybil built-in** — UZPROOF runs 14 anti-sybil signals before
   issuing an attestation, so `genuineScore` is meaningful.
 
 ## License
